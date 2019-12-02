@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane cache="true" prefHeight="272.0" prefWidth="479.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="infoLibrary.controller.SettingsController">
+   <children>
+      <CheckBox fx:id="transtlationCheckBox" alignment="CENTER" layoutX="74.0" layoutY="66.0" mnemonicParsing="false" onAction="#actions" prefHeight="40.0" prefWidth="140.0" text="ÇEVİRİ" textFill="#1859ad">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="abbreviationCheckBox" alignment="CENTER" layoutX="254.0" layoutY="66.0" mnemonicParsing="false" onAction="#actions" prefHeight="40.0" prefWidth="140.0" text="KISALTMA" textFill="#1859ad">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="setDefaultBTN" layoutX="192.0" layoutY="233.0" mnemonicParsing="false" onAction="#actions" prefHeight="25.0" prefWidth="113.0" text="SIFIRLA" textFill="#1859ad">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="saveBTN" layoutX="308.0" layoutY="233.0" mnemonicParsing="false" onAction="#actions" prefHeight="25.0" prefWidth="113.0" text="KAYDET" textFill="#1859ad">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <CheckBox fx:id="autoStartCheckBox" layoutX="248.0" layoutY="106.0" mnemonicParsing="false" onAction="#actions" text="Açılışta Çalış" textFill="#1859ad">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="autoQuestionCheckBox" layoutX="74.0" layoutY="146.0" mnemonicParsing="false" onAction="#actions" text="Otomatik Soru Sor" textFill="#1859ad">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <TextField fx:id="autoQuestionHourTF" layoutX="105.0" layoutY="167.0" prefHeight="25.0" prefWidth="30.0" />
+      <TextField fx:id="autoQuestionMinuteTF" layoutX="160.0" layoutY="167.0" prefHeight="25.0" prefWidth="30.0" />
+      <Label contentDisplay="CENTER" layoutX="75.0" layoutY="169.0" prefHeight="20.0" prefWidth="30.0" text="saat" textAlignment="CENTER" textFill="#1859ad">
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="136.0" layoutY="169.0" prefHeight="20.0" prefWidth="22.0" text="dk" textAlignment="CENTER" textFill="#1859ad">
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="turkishToEnglishCheckBox" layoutX="74.0" layoutY="106.0" mnemonicParsing="false" onAction="#actions" text="Türkçe İngilizce" textFill="#1859ad">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="englishToTurkishCheckBox" layoutX="74.0" layoutY="126.0" mnemonicParsing="false" onAction="#actions" text="İngilizce Türkçe" textFill="#1859ad">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <TextField fx:id="autoQuestionCount" layoutX="147.0" layoutY="194.0" prefHeight="25.0" prefWidth="56.0" />
+      <Label contentDisplay="CENTER" layoutX="75.0" layoutY="197.0" prefHeight="20.0" prefWidth="72.0" text="soru sayısı" textAlignment="CENTER" textFill="#1859ad">
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="228.0" layoutY="110.0" orientation="VERTICAL" prefHeight="115.0" prefWidth="4.0" />
+      <CheckBox fx:id="questionTransitionCheckBox" layoutX="248.0" layoutY="126.0" mnemonicParsing="false" onAction="#actions" text="Soru Geçiş Süresi (sn)" textFill="#1859ad">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <TextField fx:id="durationOfTransitionTF" layoutX="379.0" layoutY="144.0" prefHeight="25.0" prefWidth="30.0" />
+      <Button fx:id="translationBTN" layoutX="69.0" layoutY="22.0" mnemonicParsing="false" onAction="#actions" prefHeight="34.0" prefWidth="157.0" text="ÇEVİRİ LİSTESİ" textFill="#1859ad">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="abbreviationBTN" layoutX="235.0" layoutY="22.0" mnemonicParsing="false" onAction="#actions" prefHeight="34.0" prefWidth="157.0" text="KISALTMA LİSTESİ" textFill="#1859ad">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="informationLBL" alignment="CENTER" focusTraversable="false" layoutX="249.0" layoutY="189.0" prefHeight="25.0" prefWidth="168.0" text="AYARLAR KAYDEDİLDİ" textFill="#1e9044" visible="false" />
+   </children>
+</AnchorPane>

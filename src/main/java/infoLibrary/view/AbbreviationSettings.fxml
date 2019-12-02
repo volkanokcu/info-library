@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane cache="true" prefHeight="348.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="infoLibrary.controller.AbbreviationSettings">
+   <children>
+      <TextField fx:id="nameTF" layoutX="45.0" layoutY="37.0" promptText="Kısaltma Adı">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="45.0" layoutY="12.0" prefHeight="25.0" prefWidth="196.0" text="YENİ KISALTMA EKLE" textAlignment="CENTER" textFill="#1859ad">
+         <font>
+            <Font name="SansSerif Regular" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="resultLBL" alignment="CENTER" contentDisplay="CENTER" layoutX="71.0" layoutY="75.0" opacity="0.0" prefHeight="21.0" prefWidth="247.0" text="Kaydedildi" textAlignment="CENTER" textFill="#1e9044">
+         <font>
+            <Font name="SansSerif Regular" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="addBTN" layoutX="466.0" layoutY="73.0" mnemonicParsing="false" onAction="#buttonHandler" prefHeight="25.0" prefWidth="113.0" text="EKLE" textFill="#1859ad">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="clearBTN" layoutX="342.0" layoutY="73.0" mnemonicParsing="false" onAction="#buttonHandler" prefHeight="25.0" prefWidth="113.0" text="TEMİZLE" textFill="#1859ad">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="expansionTF" layoutX="233.0" layoutY="37.0" promptText="Kısaltma Açılımı">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="detailsTF" layoutX="417.0" layoutY="37.0" promptText="Ayrıntılı Bilgi (URL)">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="listTV" layoutX="45.0" layoutY="114.0" prefHeight="176.0" prefWidth="533.0">
+        <columns>
+          <TableColumn prefWidth="106.0" text="Türkçe" />
+          <TableColumn prefWidth="106.0" text="İngilizce" />
+            <TableColumn prefWidth="106.0" text="Dorğu " />
+            <TableColumn prefWidth="106.0" text="Yanlış" />
+            <TableColumn prefWidth="107.0" text="Aktif" />
+        </columns>
+      </TableView>
+      <Button fx:id="updateBTN" layoutX="461.0" layoutY="299.0" mnemonicParsing="false" onAction="#buttonHandler" prefHeight="25.0" prefWidth="113.0" text="KAYDET" textFill="#1859ad">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteBTN" layoutX="337.0" layoutY="299.0" mnemonicParsing="false" onAction="#buttonHandler" prefHeight="25.0" prefWidth="113.0" text="SİL" textFill="#1859ad">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
